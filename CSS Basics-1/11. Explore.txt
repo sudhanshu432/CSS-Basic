@@ -1,0 +1,5 @@
+Explore time:
+
+. Universal Selector
+. Nested Selector
+. Attribute Selector
