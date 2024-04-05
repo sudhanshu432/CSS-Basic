@@ -1,0 +1,23 @@
+Units in CSS
+
+1. Absolute Unit
+2. Percentage Unit
+3. Relative Unit
+    1. Relative to font size
+    2. Related to Document
+
+pixel-> 1/96 (inch)
+
+Absolute Unit:
+-> mm
+-> cm
+-> in
+-> px
+
+Percentage Unit
+
+div{width: 10%;}
+
+Relative Unit to Font size
+• em
+• rem
