@@ -1,0 +1,16 @@
+Q-1:
+Position text in all coreners && centre of an image
+
+Q-2:
+CSS - 2D transforms
+CSS transforms allow you to move, rotate, scale, and skew elements.
+• With transform property you can use following methodsL
+• translate()
+• rotate()
+• scaleX()
+• scaleY()
+• scale()
+• skewX()
+• skewY()
+• skew()
+• matrix()

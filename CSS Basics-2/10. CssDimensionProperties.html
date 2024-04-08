@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dimension Example</title>
+    <style>
+
+.card {
+    /* Dimensions */
+    width: 60%; /* Card width will be 60% of its parent (body) */
+    max-width: 500px; /* Card will not grow beyond 500px */
+    min-width: 300px; /* Card will not shrink below 300px */
+    height: auto; /* Height is set to auto to adjust based on content */
+    min-height: 200px; /* Minimum height */
+    
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 45px;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Responsive Card</h2>
+    <p>This card adjusts its size based on the screen width.</p>
+</div>
+
+</body>
+</html>

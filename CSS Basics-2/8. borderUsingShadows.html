@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.shadow-border {
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: auto;
+  background-color: #f0f0f0;
+  /* Shadow property */
+  box-shadow: 0 0 0 10px #8a2be2; /* Adjust the spread value (last value) for border thickness */
+  /* Optional: add more box shadows for nuanced effects */
+}
+
+    </style>
+</head>
+<body>
+    <div class="shadow-border">This div has a shadow border!</div>
+    <ol>
+        <h3>The box-shadow syntax used here is:</h3>
+        <li>The first value (0) is the horizontal offset of the shadow. Setting it to 0 keeps the shadow centered horizontally around the element.</li>
+        <li>The second value (0) is the vertical offset. Similarly, setting it to 0 keeps it centered vertically.</li>
+        <li>The third value (0) is the blur radius. Keeping it at 0 ensures the shadow remains solid, resembling a border.</li>
+        <li>The fourth value (10px) is the spread radius, which essentially determines the thickness of the shadow. Adjusting this value will change the thickness of your "border."</li>
+        <li>The color value (#8a2be2) defines the color of the shadow, which in this case acts as the border color.</li>
+    </ol>
+</body>
+</html>
