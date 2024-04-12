@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            position: static;
+        } */
+        div{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color:aqua;
+            border: 1px solid black;
+        }
+        #box3{
+            position: relative;
+            top: 10px;
+            left: 150px;
+            margin: 20px;
+        }
+        #box1{
+            position: fixed;
+
+        }
+        #box2{
+            position: sticky;
+            left: 150px;
+            top: 200px;
+        }
+        
+        .wrapper{
+            height: 1000px;
+            width: 100vw;
+            background-color: yellow;
+        }
+
+
+        /* .wrapper{
+            height: 1000px;
+            width: 1000px;
+            background-color: yellow;
+        } */
+
+        .list{
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>CSS Position Property</h1>
+    <div>
+    <ul class="list">
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Fixed</li>
+        <li>Absolute</li>
+        <li>Sticky</li>
+    </ul>
+    <p>This is a para</p>
+    <h1>Heading 1</h1>
+    <p>Second para</p>
+    <h2>Second heading</h2> -->
+    <!-- <div class="wrapper">
+
+    </div> -->
+    <div class="wrapper">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <!-- <div class="box" id="box4">D</div> -->
+        <ul class="list">
+            <li>A</li>
+            <li>B</li>
+            <li>B</li>
+        </ul>
+    </div>
+
+
+</div>
+</body>
+</html>
