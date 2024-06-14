@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            height: 700px;
+            background-color: yellow;
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-rows: minm  ax(100px, auto);
+            /* grid-template-rows: repeat(2, 1fr); */
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+
+        .box{
+            border: 1px solid green;
+            background-color: aqua;  
+            /* height: 100px; */
+            /* width: 100px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="footer">Footer</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+        <div class="box" id="content">Content2</div>
+        <div class="box" id="footer">Footer2</div>
+    </div>
+</body>
+</html>
