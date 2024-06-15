@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grids</title>
+    <style>
+                /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        .container{
+            border: 1px solid black;
+            background-color: yellow;
+            height: 700px;    
+            width: 504px;        
+
+            display: grid;
+
+            grid-template-rows: 30px 1fr 30px;
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-columns: 100px 400px;
+            grid-gap: 4px;
+
+            grid-template-areas: 
+            "hd hd"
+            "side main"
+            "ft ft";
+        }
+
+        .box{
+            background-color: aqua;
+            border: 1px solid red;
+        }
+
+        #Header{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-area: hd;
+    
+        }
+        #Sidebar{
+            grid-area: side;
+        }
+        #content{
+            grid-area: main;
+        }
+        #Footer{
+            /* grid-column-start: 1;
+            grid-column-end: 3;  */
+            grid-area: ft;
+        }
+/* 
+        @media(max-width:400px){
+            .container{
+                gap: 100px;
+            }
+        } */
+        .childgrid{
+            height: 100%;
+            width: 100%;
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+
+            grid-gap: 5px;
+        }
+        .element{
+            border: 2px solid green;
+            background-color: hotpink;
+        }
+        @media(max-width:500px){
+            .container{
+            /* border: 1px solid black;
+            background-color: yellow;
+            height: 700px;    
+            width: 504px;        
+
+            display: grid; */
+
+            grid-template-rows: 30px 1fr 1fr 30px;
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-columns: 1fr;
+            grid-gap: 2px;
+
+            grid-template-areas: 
+            "hd"
+            "side"
+            "main"
+            "ft";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">HEADER</div>
+        <div class="box" id="sidebar">SIDEBAR</div>
+        <div class="box" id="content">
+            
+            <div class="childgrid">
+                <div class="element">IMG1</div>
+                <div class="element">IMG2</div>
+                <div class="element">IMG3</div>
+                <div class="element">IMG4</div>
+            </div>
+
+        </div>
+        <div class="box" id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

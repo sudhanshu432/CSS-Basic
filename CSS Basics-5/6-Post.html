@@ -6,10 +6,28 @@
     <title>Post</title>
     <style>
         .container{
+            border: 1px solid black;
+            background-color: yellow;
+            height: 700px;    
+            width: 504px;        
+
+            display: grid;
+
+            grid-template-rows: 30px 1fr 1fr 30px;
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-columns: 1fr;
+            grid-gap: 4px;
+
+            grid-template-areas: 
+            "hd"
+            "side"
+            "main"
+            "ft";
             
         }
         .box{
-
+            background-color: aqua;
+            border: 1px solid black;
         }
         #Header{
 
@@ -27,7 +45,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="box" id="Header">Header</div>
+        <div class="box" id="Header">
+            <a href="5-BlogWebsite.html">Click Here to move backward</a></div>
         <div class="box" id="Sidebar">Sidebar</div>
         <div class="box" id="content">content</div>
         <div class="box" id="Footer">Footer</div>
