@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+.container{
+    height:500px;
+    width:500px;
+    background-color: green;
+    border:3px solid red;
+    display: flex;
+}
+
+.box{
+    height:150px;
+    width:150px;
+    margin:20px;
+    border:2px solid orange;
+    background-color: aqua;
+
+    /* transition: 2s; */
+
+    /* transition-property: background-color; */
+
+    /* transition:transform 5s ease 1s; */
+    /* transition:5s ease 1s; */
+    /* transition: transform 5s ease-in; */
+    /* transition: transform 5s ease; */
+    /* transition: transform 5s ease-out; */
+    /* transition: transform 5s cubic-bezier(0,-1.12, 0, 1.34); */
+    /* transition:  background-color 0.3s ease ; */
+    /* transition: all 200ms ease ; */
+    /* transition: transform 3s cubic-bezier(0, 1.47, 0, 1.68) 1s; */
+
+    /* transition:  3s ease 1s; */
+
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+
+}
+
+.box:hover{
+     /* background-color: brown; */
+     /* transform: rotate(45deg); */
+     /* transform: translateX(500px); */
+    transform: scale(2) translateX(501px) rotate(360deg);
+    /* transform: translateX(501px) translateY(501px) rotate(360deg); */
+} 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+    </div>
+</body>
+</html>
