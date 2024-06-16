@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: yellow;
+            width: 800px;
+            display: flex;
+        }
+        .box{
+            height: 212px;
+            width: 212px;
+            border: 2px solid green;
+            background-color: green;
+
+            animation-name: sudhanshu;
+            animation-duration: 3s;
+            animation-iteration-count: 4 ;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes sudhanshu {
+            0%{
+                width: 212px;
+                background-color: orange;
+            }
+
+            50%{
+                width: 35%;
+                background-color: white;
+            }
+            /* 65%{
+                width: 70%;
+                background-color: pink;
+            } */
+            100%{
+                width: 100%;
+                background-color: green;
+            }
+            
+        }
+
+        /* @keyframes sudhanshu {
+            from{
+                width: 212px;
+            }
+            to{
+                /* width: 800px; */
+                /* width: 100%; */
+            /* }
+            
+        }  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
