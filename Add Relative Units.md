@@ -4,7 +4,7 @@
 In the context of the previous Velocity application, the company demands an enhancement in responsiveness by utilizing relative units in CSS. Your task is to modify the provided HTML and CSS code to achieve the desired output as depicted in the expected output section below.
 
 ## Expected Output
-![Uploading Expected Output.gif…]()
+![Expected Output](https://github.com/user-attachments/assets/b2231f76-61a2-4cda-bf97-ed7335400243)
 
 ## Test Cases
 Ensure that the modifications adhere to the following test cases:
